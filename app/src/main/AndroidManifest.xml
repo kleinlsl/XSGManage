@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.edu.xsgmanage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Teacher.AddGradeActivity"></activity>
+        <activity android:name=".Teacher.UpdataGradeActivity" />
+        <activity android:name=".Teacher.MyMateActivity" />
+        <activity android:name=".Student.GradeActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".MyClassActivity" />
+        <activity android:name=".MyUpdataPassActivity" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Student.StuMainActivity" />
+        <activity android:name=".Teacher.TeaMainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

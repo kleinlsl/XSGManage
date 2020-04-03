@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/message_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/round_stylebegin"
+            android:src="@drawable/icon24">
+        </ImageView>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/image_round"
+            android:text="username">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_stylebegin"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:text="身    份："
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <EditText
+                android:id="@+id/Ed_re_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:focusable="false"
+                android:hint="userid">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:text="姓    名："
+                android:layout_marginLeft="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/Ed_re_message_name"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="yourname">
+            </EditText>
+        </LinearLayout>
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:text="密    码："
+                android:layout_marginLeft="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/Ed_re_user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:focusable="false"
+                android:hint="password"
+                android:inputType="textPassword"></EditText>
+        </LinearLayout>
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                android:text="年   龄："></TextView>
+
+            <EditText
+                android:id="@+id/Ed_re_message_age"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="userage"
+                android:inputType="number"></EditText>
+        </LinearLayout>
+
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                android:text="手机号："></TextView>
+
+            <EditText
+                android:id="@+id/Ed_re_message_phone"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="userphone"
+                android:inputType="number"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="75dp"
+            android:background="@android:color/holo_blue_light"
+            android:layout_gravity="center">
+
+            <RadioGroup
+                android:id="@+id/RadioGroup_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|left"
+                android:orientation="horizontal"><!--设置线性布局方式-->
+                <RadioButton
+                    android:id="@+id/RB_message_sex_nan"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:text="男"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/RB_message_sex_nv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="30dp"
+                    android:text="女"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center|left">
+
+            <Button
+                android:id="@+id/button_updata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="修改信息"></Button>
+
+            <Button
+                android:id="@+id/button_gb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="返回"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

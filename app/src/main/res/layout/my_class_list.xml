@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_lst_message_name"
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="message_name" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_lst_message_phone"
+        android:layout_weight="0.6"
+        android:layout_width="0dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="message_phone" />
+</LinearLayout>

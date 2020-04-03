@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/Bu_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_lst_xue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_vertical"
+                android:text="xuenian"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_lst_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_stylebegin"
+                android:gravity="center_vertical"
+                android:text="username"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/tv_lst_course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/round_stylebegin"
+                android:gravity="center_vertical"
+                android:text="CourseName"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_lst_value"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:textSize="17dp"
+                android:background="@drawable/round_stylebegin"
+                android:gravity="center_vertical|left"
+                android:layout_height="wrap_content"
+                android:text="value" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bottom_arrow">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_lst_complain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_vertical"
+                android:text="成绩申诉"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

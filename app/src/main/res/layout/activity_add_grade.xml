@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    tools:context=".Teacher.AddGradeActivity">
+
+    <LinearLayout
+        android:id="@+id/user_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"
+            android:background="@drawable/image_round"
+            android:text="添加成绩">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_stylebegin"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:text="学    号："
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <EditText
+                android:id="@+id/Ed_grade_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="username">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:text="课程号："
+                android:layout_marginLeft="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/Ed_grade_course_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="courseid">
+            </EditText>
+        </LinearLayout>
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                android:text="成    绩："></TextView>
+
+            <EditText
+                android:id="@+id/Ed_grade_value"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:hint="gradevalue"
+                android:inputType="numberDecimal"></EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center|left">
+
+            <Button
+                android:id="@+id/button_updata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="提交"></Button>
+
+            <Button
+                android:id="@+id/button_gb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="返回"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

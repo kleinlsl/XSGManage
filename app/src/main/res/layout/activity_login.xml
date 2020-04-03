@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Linear_netAddress"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="63dp"
+            android:src="@drawable/xculogo1">
+
+        </ImageView><!--        tools:srcCompat="@mipmap/xculogo1"-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_stylebegin"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:orientation="vertical">
+
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditText_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/round_stylebegin"
+                android:drawableLeft="@drawable/usernameicon"
+                android:hint="Username"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="10dp">
+        </LinearLayout>
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditText_login_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/round_stylebegin"
+                android:drawableLeft="@drawable/passwdicon"
+                android:hint="Password"
+                android:inputType="textPassword"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_light"
+            android:layout_gravity="center"
+            android:gravity="center|left">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/re_Me"
+                android:text="记住我"
+                android:textSize="20dp"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/re_stu"
+                    android:text="学生"
+                    android:textSize="20dp"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/re_tea"
+                    android:text="教师"
+                    android:textSize="20dp"
+                    >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center|left">
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="登陆"></Button>
+
+            <Button
+                android:id="@+id/button_go_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/select_style"
+                android:layout_weight="1"
+                android:text="注册"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
