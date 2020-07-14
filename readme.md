@@ -70,6 +70,5 @@ D:.
 ```
 
 # 项目相关界面
-- 系统部分
 
-![](project-file/image/login.png)
+> 参见此处：[here](projict-file)
