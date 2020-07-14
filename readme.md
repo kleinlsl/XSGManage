@@ -71,4 +71,16 @@ D:.
 
 # 项目相关界面
 
-> 参见此处：[here](projict-file)
+> 参见此处：[here](project-file)
+
+# 项目相关依赖
+```jshelllanguage
+    testImplementation 'junit:junit:4.12'     //测试依赖：单元测试
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'     //okhttp：发送http请求
+    implementation files('libs/gson-2.8.6.jar')         //gson：解析json数据
+```
+# Android开发查看sqlite数据库的方式
+> 参见此处：[here](project-file/doc/see-sqlite.md)
+
+# references.md
+> 参见此处:[here](project-file/doc/references.md)
